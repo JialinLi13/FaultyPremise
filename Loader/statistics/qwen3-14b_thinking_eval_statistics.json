@@ -1,0 +1,441 @@
+{
+    "model_name": "qwen3-14b_thinking",
+    "overall_statistics": {
+        "active_recognition_count": 415,
+        "passive_recognition_count": 1026,
+        "active_recognition_rate": 0.23029966703662597,
+        "passive_recognition_rate": 0.5693673695893452,
+        "active_recognition_count_no_fsc": 415,
+        "active_recognition_applicable_count_no_fsc": 1802,
+        "active_recognition_rate_no_fsc": 0.23029966703662597,
+        "normal_correctness_count": 0,
+        "normal_correctness_rate": 0.0,
+        "normal_correctness_applicable_count": 0,
+        "normal_answer_avg_len_overall": 367.4034406215316,
+        "ill_answer_avg_len_overall": 382.7713651498335,
+        "ill_with_hint_answer_avg_len_overall": 524.2835738068812,
+        "normal_answer_avg_len_active_success": 359.4385542168675,
+        "ill_answer_avg_len_active_success": 431.96144578313255,
+        "normal_answer_avg_len_passive_success": 359.64230019493175,
+        "ill_with_hint_answer_avg_len_passive_success": 557.8820662768031,
+        "active_criticism_efficiency_overall": 1.0418284719988038,
+        "passive_criticism_efficiency_overall": 1.4269969081398843,
+        "active_criticism_efficiency_on_success": 1.2017671468890572,
+        "passive_criticism_efficiency_on_success": 1.55121370866114,
+        "active_success_count": 415,
+        "passive_success_count": 1026,
+        "total_evaluated": 1802,
+        "valid_for_metrics": 1802,
+        "invalid_format_count": 0,
+        "invalid_format_pids": []
+    },
+    "statistics_by_difficulty": {
+        "normal": {
+            "active_recognition_count": 174,
+            "passive_recognition_count": 401,
+            "active_recognition_rate": 0.2895174708818636,
+            "passive_recognition_rate": 0.6672212978369384,
+            "active_recognition_count_no_fsc": 174,
+            "active_recognition_applicable_count_no_fsc": 601,
+            "active_recognition_rate_no_fsc": 0.2895174708818636,
+            "normal_correctness_count": 0,
+            "normal_correctness_rate": 0.0,
+            "normal_correctness_applicable_count": 0,
+            "normal_answer_avg_len_overall": 372.63560732113143,
+            "ill_answer_avg_len_overall": 377.59400998336105,
+            "ill_with_hint_answer_avg_len_overall": 524.820299500832,
+            "normal_answer_avg_len_active_success": 352.21264367816093,
+            "ill_answer_avg_len_active_success": 397.3448275862069,
+            "normal_answer_avg_len_passive_success": 364.06733167082297,
+            "ill_with_hint_answer_avg_len_passive_success": 542.8204488778055,
+            "active_criticism_efficiency_overall": 1.0133063039731374,
+            "passive_criticism_efficiency_overall": 1.4084008323137789,
+            "active_criticism_efficiency_on_success": 1.128139022599331,
+            "passive_criticism_efficiency_on_success": 1.4909891705653087,
+            "active_success_count": 174,
+            "passive_success_count": 401,
+            "total_evaluated": 601,
+            "valid_for_metrics": 601,
+            "invalid_format_count": 0,
+            "invalid_format_pids": []
+        },
+        "medium": {
+            "active_recognition_count": 130,
+            "passive_recognition_count": 325,
+            "active_recognition_rate": 0.21630615640599002,
+            "passive_recognition_rate": 0.540765391014975,
+            "active_recognition_count_no_fsc": 130,
+            "active_recognition_applicable_count_no_fsc": 601,
+            "active_recognition_rate_no_fsc": 0.21630615640599002,
+            "normal_correctness_count": 0,
+            "normal_correctness_rate": 0.0,
+            "normal_correctness_applicable_count": 0,
+            "normal_answer_avg_len_overall": 312.6106489184692,
+            "ill_answer_avg_len_overall": 336.47254575707154,
+            "ill_with_hint_answer_avg_len_overall": 480.80865224625626,
+            "normal_answer_avg_len_active_success": 317.1461538461538,
+            "ill_answer_avg_len_active_success": 401.46923076923076,
+            "normal_answer_avg_len_passive_success": 307.5784615384615,
+            "ill_with_hint_answer_avg_len_passive_success": 516.5323076923077,
+            "active_criticism_efficiency_overall": 1.0763310428520483,
+            "passive_criticism_efficiency_overall": 1.5380431022094008,
+            "active_criticism_efficiency_on_success": 1.2658808120497709,
+            "passive_criticism_efficiency_on_success": 1.6793513600032013,
+            "active_success_count": 130,
+            "passive_success_count": 325,
+            "total_evaluated": 601,
+            "valid_for_metrics": 601,
+            "invalid_format_count": 0,
+            "invalid_format_pids": []
+        },
+        "hard": {
+            "active_recognition_count": 111,
+            "passive_recognition_count": 300,
+            "active_recognition_rate": 0.185,
+            "passive_recognition_rate": 0.5,
+            "active_recognition_count_no_fsc": 111,
+            "active_recognition_applicable_count_no_fsc": 600,
+            "active_recognition_rate_no_fsc": 0.185,
+            "normal_correctness_count": 0,
+            "normal_correctness_rate": 0.0,
+            "normal_correctness_applicable_count": 0,
+            "normal_answer_avg_len_overall": 417.0466666666667,
+            "ill_answer_avg_len_overall": 434.3333333333333,
+            "ill_with_hint_answer_avg_len_overall": 567.2933333333333,
+            "normal_answer_avg_len_active_success": 420.2972972972973,
+            "ill_answer_avg_len_active_success": 521.936936936937,
+            "normal_answer_avg_len_passive_success": 410.13,
+            "ill_with_hint_answer_avg_len_passive_success": 622.81,
+            "active_criticism_efficiency_overall": 1.0414501974199528,
+            "passive_criticism_efficiency_overall": 1.3602634397429543,
+            "active_criticism_efficiency_on_success": 1.2418279639037146,
+            "passive_criticism_efficiency_on_success": 1.5185672835442419,
+            "active_success_count": 111,
+            "passive_success_count": 300,
+            "total_evaluated": 600,
+            "valid_for_metrics": 600,
+            "invalid_format_count": 0,
+            "invalid_format_pids": []
+        }
+    },
+    "comparative_statistics_by_difficulty": {
+        "active_recognition_rate": {
+            "medium": 0.21630615640599002,
+            "hard": 0.185,
+            "normal": 0.2895174708818636
+        },
+        "passive_recognition_rate": {
+            "medium": 0.540765391014975,
+            "hard": 0.5,
+            "normal": 0.6672212978369384
+        },
+        "active_recognition_rate_no_fsc": {
+            "medium": 0.21630615640599002,
+            "hard": 0.185,
+            "normal": 0.2895174708818636
+        },
+        "normal_correctness_rate": {
+            "medium": 0.0,
+            "hard": 0.0,
+            "normal": 0.0
+        },
+        "normal_answer_avg_len_overall": {
+            "medium": 312.6106489184692,
+            "hard": 417.0466666666667,
+            "normal": 372.63560732113143
+        },
+        "ill_answer_avg_len_overall": {
+            "medium": 336.47254575707154,
+            "hard": 434.3333333333333,
+            "normal": 377.59400998336105
+        },
+        "ill_with_hint_answer_avg_len_overall": {
+            "medium": 480.80865224625626,
+            "hard": 567.2933333333333,
+            "normal": 524.820299500832
+        },
+        "normal_answer_avg_len_active_success": {
+            "medium": 317.1461538461538,
+            "hard": 420.2972972972973,
+            "normal": 352.21264367816093
+        },
+        "ill_answer_avg_len_active_success": {
+            "medium": 401.46923076923076,
+            "hard": 521.936936936937,
+            "normal": 397.3448275862069
+        },
+        "normal_answer_avg_len_passive_success": {
+            "medium": 307.5784615384615,
+            "hard": 410.13,
+            "normal": 364.06733167082297
+        },
+        "ill_with_hint_answer_avg_len_passive_success": {
+            "medium": 516.5323076923077,
+            "hard": 622.81,
+            "normal": 542.8204488778055
+        },
+        "active_criticism_efficiency_overall": {
+            "medium": 1.0763310428520483,
+            "hard": 1.0414501974199528,
+            "normal": 1.0133063039731374
+        },
+        "passive_criticism_efficiency_overall": {
+            "medium": 1.5380431022094008,
+            "hard": 1.3602634397429543,
+            "normal": 1.4084008323137789
+        },
+        "active_criticism_efficiency_on_success": {
+            "medium": 1.2658808120497709,
+            "hard": 1.2418279639037146,
+            "normal": 1.128139022599331
+        },
+        "passive_criticism_efficiency_on_success": {
+            "medium": 1.6793513600032013,
+            "hard": 1.5185672835442419,
+            "normal": 1.4909891705653087
+        },
+        "valid_for_metrics": {
+            "medium": 601,
+            "hard": 600,
+            "normal": 601
+        },
+        "active_success_count": {
+            "medium": 130,
+            "hard": 111,
+            "normal": 174
+        },
+        "passive_success_count": {
+            "medium": 325,
+            "hard": 300,
+            "normal": 401
+        }
+    },
+    "statistics_by_conflict_type": {
+        "Importance_Score": {
+            "active_recognition_count": 285,
+            "passive_recognition_count": 701,
+            "active_recognition_rate": 0.2373022481265612,
+            "passive_recognition_rate": 0.5836802664446294,
+            "active_recognition_count_no_fsc": 285,
+            "active_recognition_applicable_count_no_fsc": 1201,
+            "active_recognition_rate_no_fsc": 0.2373022481265612,
+            "normal_correctness_count": 0,
+            "normal_correctness_rate": 0.0,
+            "normal_correctness_applicable_count": 0,
+            "normal_answer_avg_len_overall": 394.82264779350544,
+            "ill_answer_avg_len_overall": 405.94004995836804,
+            "ill_with_hint_answer_avg_len_overall": 546.0391340549542,
+            "normal_answer_avg_len_active_success": 378.7298245614035,
+            "ill_answer_avg_len_active_success": 445.8701754385965,
+            "normal_answer_avg_len_passive_success": 383.78031383737516,
+            "ill_with_hint_answer_avg_len_passive_success": 577.0527817403708,
+            "active_criticism_efficiency_overall": 1.028157964663357,
+            "passive_criticism_efficiency_overall": 1.3829985111202026,
+            "active_criticism_efficiency_on_success": 1.1772776964553726,
+            "passive_criticism_efficiency_on_success": 1.5036018287923278,
+            "active_success_count": 285,
+            "passive_success_count": 701,
+            "total_evaluated": 1201,
+            "valid_for_metrics": 1201,
+            "invalid_format_count": 0,
+            "invalid_format_pids": []
+        },
+        "Unperturbed_query": {
+            "active_recognition_count": 130,
+            "passive_recognition_count": 325,
+            "active_recognition_rate": 0.21630615640599002,
+            "passive_recognition_rate": 0.540765391014975,
+            "active_recognition_count_no_fsc": 130,
+            "active_recognition_applicable_count_no_fsc": 601,
+            "active_recognition_rate_no_fsc": 0.21630615640599002,
+            "normal_correctness_count": 0,
+            "normal_correctness_rate": 0.0,
+            "normal_correctness_applicable_count": 0,
+            "normal_answer_avg_len_overall": 312.6106489184692,
+            "ill_answer_avg_len_overall": 336.47254575707154,
+            "ill_with_hint_answer_avg_len_overall": 480.80865224625626,
+            "normal_answer_avg_len_active_success": 317.1461538461538,
+            "ill_answer_avg_len_active_success": 401.46923076923076,
+            "normal_answer_avg_len_passive_success": 307.5784615384615,
+            "ill_with_hint_answer_avg_len_passive_success": 516.5323076923077,
+            "active_criticism_efficiency_overall": 1.0763310428520483,
+            "passive_criticism_efficiency_overall": 1.5380431022094008,
+            "active_criticism_efficiency_on_success": 1.2658808120497709,
+            "passive_criticism_efficiency_on_success": 1.6793513600032013,
+            "active_success_count": 130,
+            "passive_success_count": 325,
+            "total_evaluated": 601,
+            "valid_for_metrics": 601,
+            "invalid_format_count": 0,
+            "invalid_format_pids": []
+        }
+    },
+    "comparative_statistics_by_conflict_type": {
+        "active_recognition_rate": {
+            "Importance_Score": 0.2373022481265612,
+            "Unperturbed_query": 0.21630615640599002
+        },
+        "passive_recognition_rate": {
+            "Importance_Score": 0.5836802664446294,
+            "Unperturbed_query": 0.540765391014975
+        },
+        "active_recognition_rate_no_fsc": {
+            "Importance_Score": 0.2373022481265612,
+            "Unperturbed_query": 0.21630615640599002
+        },
+        "normal_correctness_rate": {
+            "Importance_Score": 0.0,
+            "Unperturbed_query": 0.0
+        },
+        "normal_answer_avg_len_overall": {
+            "Importance_Score": 394.82264779350544,
+            "Unperturbed_query": 312.6106489184692
+        },
+        "ill_answer_avg_len_overall": {
+            "Importance_Score": 405.94004995836804,
+            "Unperturbed_query": 336.47254575707154
+        },
+        "ill_with_hint_answer_avg_len_overall": {
+            "Importance_Score": 546.0391340549542,
+            "Unperturbed_query": 480.80865224625626
+        },
+        "normal_answer_avg_len_active_success": {
+            "Importance_Score": 378.7298245614035,
+            "Unperturbed_query": 317.1461538461538
+        },
+        "ill_answer_avg_len_active_success": {
+            "Importance_Score": 445.8701754385965,
+            "Unperturbed_query": 401.46923076923076
+        },
+        "normal_answer_avg_len_passive_success": {
+            "Importance_Score": 383.78031383737516,
+            "Unperturbed_query": 307.5784615384615
+        },
+        "ill_with_hint_answer_avg_len_passive_success": {
+            "Importance_Score": 577.0527817403708,
+            "Unperturbed_query": 516.5323076923077
+        },
+        "active_criticism_efficiency_overall": {
+            "Importance_Score": 1.028157964663357,
+            "Unperturbed_query": 1.0763310428520483
+        },
+        "passive_criticism_efficiency_overall": {
+            "Importance_Score": 1.3829985111202026,
+            "Unperturbed_query": 1.5380431022094008
+        },
+        "active_criticism_efficiency_on_success": {
+            "Importance_Score": 1.1772776964553726,
+            "Unperturbed_query": 1.2658808120497709
+        },
+        "passive_criticism_efficiency_on_success": {
+            "Importance_Score": 1.5036018287923278,
+            "Unperturbed_query": 1.6793513600032013
+        },
+        "valid_for_metrics": {
+            "Importance_Score": 1201,
+            "Unperturbed_query": 601
+        },
+        "active_success_count": {
+            "Importance_Score": 285,
+            "Unperturbed_query": 130
+        },
+        "passive_success_count": {
+            "Importance_Score": 701,
+            "Unperturbed_query": 325
+        }
+    },
+    "statistics_by_conflict_type_and_difficulty": {
+        "Importance_Score": {
+            "normal": {
+                "active_recognition_count": 174,
+                "passive_recognition_count": 401,
+                "active_recognition_rate": 0.2895174708818636,
+                "passive_recognition_rate": 0.6672212978369384,
+                "active_recognition_count_no_fsc": 174,
+                "active_recognition_applicable_count_no_fsc": 601,
+                "active_recognition_rate_no_fsc": 0.2895174708818636,
+                "normal_correctness_count": 0,
+                "normal_correctness_rate": 0.0,
+                "normal_correctness_applicable_count": 0,
+                "normal_answer_avg_len_overall": 372.63560732113143,
+                "ill_answer_avg_len_overall": 377.59400998336105,
+                "ill_with_hint_answer_avg_len_overall": 524.820299500832,
+                "normal_answer_avg_len_active_success": 352.21264367816093,
+                "ill_answer_avg_len_active_success": 397.3448275862069,
+                "normal_answer_avg_len_passive_success": 364.06733167082297,
+                "ill_with_hint_answer_avg_len_passive_success": 542.8204488778055,
+                "active_criticism_efficiency_overall": 1.0133063039731374,
+                "passive_criticism_efficiency_overall": 1.4084008323137789,
+                "active_criticism_efficiency_on_success": 1.128139022599331,
+                "passive_criticism_efficiency_on_success": 1.4909891705653087,
+                "active_success_count": 174,
+                "passive_success_count": 401,
+                "total_evaluated": 601,
+                "valid_for_metrics": 601,
+                "invalid_format_count": 0,
+                "invalid_format_pids": []
+            },
+            "hard": {
+                "active_recognition_count": 111,
+                "passive_recognition_count": 300,
+                "active_recognition_rate": 0.185,
+                "passive_recognition_rate": 0.5,
+                "active_recognition_count_no_fsc": 111,
+                "active_recognition_applicable_count_no_fsc": 600,
+                "active_recognition_rate_no_fsc": 0.185,
+                "normal_correctness_count": 0,
+                "normal_correctness_rate": 0.0,
+                "normal_correctness_applicable_count": 0,
+                "normal_answer_avg_len_overall": 417.0466666666667,
+                "ill_answer_avg_len_overall": 434.3333333333333,
+                "ill_with_hint_answer_avg_len_overall": 567.2933333333333,
+                "normal_answer_avg_len_active_success": 420.2972972972973,
+                "ill_answer_avg_len_active_success": 521.936936936937,
+                "normal_answer_avg_len_passive_success": 410.13,
+                "ill_with_hint_answer_avg_len_passive_success": 622.81,
+                "active_criticism_efficiency_overall": 1.0414501974199528,
+                "passive_criticism_efficiency_overall": 1.3602634397429543,
+                "active_criticism_efficiency_on_success": 1.2418279639037146,
+                "passive_criticism_efficiency_on_success": 1.5185672835442419,
+                "active_success_count": 111,
+                "passive_success_count": 300,
+                "total_evaluated": 600,
+                "valid_for_metrics": 600,
+                "invalid_format_count": 0,
+                "invalid_format_pids": []
+            }
+        },
+        "Unperturbed_query": {
+            "medium": {
+                "active_recognition_count": 130,
+                "passive_recognition_count": 325,
+                "active_recognition_rate": 0.21630615640599002,
+                "passive_recognition_rate": 0.540765391014975,
+                "active_recognition_count_no_fsc": 130,
+                "active_recognition_applicable_count_no_fsc": 601,
+                "active_recognition_rate_no_fsc": 0.21630615640599002,
+                "normal_correctness_count": 0,
+                "normal_correctness_rate": 0.0,
+                "normal_correctness_applicable_count": 0,
+                "normal_answer_avg_len_overall": 312.6106489184692,
+                "ill_answer_avg_len_overall": 336.47254575707154,
+                "ill_with_hint_answer_avg_len_overall": 480.80865224625626,
+                "normal_answer_avg_len_active_success": 317.1461538461538,
+                "ill_answer_avg_len_active_success": 401.46923076923076,
+                "normal_answer_avg_len_passive_success": 307.5784615384615,
+                "ill_with_hint_answer_avg_len_passive_success": 516.5323076923077,
+                "active_criticism_efficiency_overall": 1.0763310428520483,
+                "passive_criticism_efficiency_overall": 1.5380431022094008,
+                "active_criticism_efficiency_on_success": 1.2658808120497709,
+                "passive_criticism_efficiency_on_success": 1.6793513600032013,
+                "active_success_count": 130,
+                "passive_success_count": 325,
+                "total_evaluated": 601,
+                "valid_for_metrics": 601,
+                "invalid_format_count": 0,
+                "invalid_format_pids": []
+            }
+        }
+    },
+    "notes": "Metrics calculated for successfully parsed evaluation results only. 'invalid_format_count' indicates results skipped due to unexpected main structure (e.g., active/passive True/False missing). Overall average lengths ('_overall') and efficiency ratios ('_overall') are calculated over ALL valid samples in that group (e.g., overall, per difficulty, per conflict type, per conflict type+difficulty). Average lengths on success ('_active_success', '_passive_success') and efficiency 'on_success' are calculated ONLY for samples within that group where the model successfully identified the contradiction in that mode. 'normal_correctness_rate' is the rate of 'True' for 'GPT_eval_result.normal.correctness', EXCLUDING entries with 'conflict_type' of 'irr_query_distraction'. The denominator for 'normal_correctness_rate' is 'normal_correctness_applicable_count'. 'active_recognition_rate_no_fsc' is the rate of 'True' for 'GPT_eval_result.active.if_find_contradiction', EXCLUDING entries with 'conflict_type' of 'flawed_solution_completion'. The denominator for 'active_recognition_rate_no_fsc' is 'active_recognition_applicable_count_no_fsc'. 'comparative_statistics_by_difficulty' and 'comparative_statistics_by_conflict_type' sections show how key metrics vary across difficulty levels and conflict types respectively. 'statistics_by_conflict_type_and_difficulty' contains all metrics for each combination of conflict type and difficulty (only for valid entries)."
+}

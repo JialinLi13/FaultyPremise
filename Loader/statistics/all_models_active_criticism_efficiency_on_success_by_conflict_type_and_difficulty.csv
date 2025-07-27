@@ -1,0 +1,17 @@
+Model,Importance_Score - hard,Importance_Score - normal,Unperturbed_query - medium
+DeepSeek-R1,1.6444,1.3909,1.5403
+DeepSeek-V3,1.1041,1.0699,1.1796
+gpt-4.1-mini,1.1854,1.2104,1.3922
+gpt-4.1,1.1336,1.1720,1.2551
+gpt-4o,1.2500,1.1492,1.2877
+gpt-4,1.2013,1.1356,1.2303
+inference,N/A,N/A,N/A
+llama-3-70b-instruct,1.0866,1.0980,1.2114
+llama-4-scout,1.1350,1.0675,1.0928
+o3-mini-medium,1.8642,1.6361,1.9270
+o4-mini-medium,1.2202,1.1921,1.1798
+Qwen2.5-Coder-32B-Instruct,1.1437,1.2023,1.2069
+Qwen2.5-VL-72B-Instruct,1.0911,1.0527,1.1324
+qwen3-14b_thinking,1.2418,1.1281,1.2659
+Qwen3-235B-A22B,1.2278,1.1573,1.2934
+Qwen3-32B,1.2142,1.1376,1.2378

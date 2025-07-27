@@ -1,0 +1,17 @@
+Model,Importance_Score,Unperturbed_query
+DeepSeek-R1,957,426
+DeepSeek-V3,656,329
+gpt-4.1-mini,962,461
+gpt-4.1,949,513
+gpt-4o,863,359
+gpt-4,640,253
+inference,N/A,N/A
+llama-3-70b-instruct,562,267
+llama-4-scout,608,389
+o3-mini-medium,687,422
+o4-mini-medium,893,376
+Qwen2.5-Coder-32B-Instruct,729,249
+Qwen2.5-VL-72B-Instruct,660,224
+qwen3-14b_thinking,701,325
+Qwen3-235B-A22B,872,429
+Qwen3-32B,825,394

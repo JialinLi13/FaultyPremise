@@ -1,0 +1,17 @@
+Model,medium,hard,normal
+DeepSeek-R1,353,383,287
+DeepSeek-V3,252,154,273
+gpt-4.1-mini,193,191,165
+gpt-4.1,173,131,102
+gpt-4o,174,124,172
+gpt-4,108,114,190
+inference,N/A,N/A,N/A
+llama-3-70b-instruct,97,63,141
+llama-4-scout,195,126,244
+o3-mini-medium,85,28,78
+o4-mini-medium,49,73,98
+Qwen2.5-Coder-32B-Instruct,151,202,184
+Qwen2.5-VL-72B-Instruct,151,176,244
+qwen3-14b_thinking,130,111,174
+Qwen3-235B-A22B,182,145,214
+Qwen3-32B,156,140,171
