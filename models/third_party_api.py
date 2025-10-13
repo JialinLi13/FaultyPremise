@@ -5,7 +5,7 @@ class CloseSourceLLM:
         self.model_name = model_name
         self.total_token_cnt = 0
         # if any(keyword in model_name.lower() for keyword in ['gpt','o1','o3','code-llama']):
-             self.API_KEY = "" #GPT专用
+             self.API_KEY = "" 
              self.BASE_URL = "https://35.aigcbest.top/v1"
        
        
@@ -18,7 +18,7 @@ class CloseSourceLLM:
         self.completion_kwargs = {
             "model": self.model_name,
         }
-        #启用流式传输
+       
         if model_args.stream:
             self.completion_kwargs["stream"] = True
             self.completion_kwargs["stream_options"] = {
@@ -29,7 +29,7 @@ class CloseSourceLLM:
                 "enable_thinking": model_args.enable_thinking,
                 "thinking_budget": model_args.thinking_budget,
             }
-        # 针对开源模型或可以设置的模型使用greedy解码
+       
         if not any(keyword in model_name.lower() for keyword in ['o1', 'o3', 'o4', 'claude', 'gemini', 'gpt']):
             self.completion_kwargs["temperature"] = model_args.temperature
             self.completion_kwargs["top_p"] = model_args.top_p
@@ -46,16 +46,16 @@ class CloseSourceLLM:
 
         if self.model_args.stream:
             #print("stream")
-            # 流式传输就是返回内容分一次次传回
-            last_chunk = None # 通过最后一个chunk记录token数量
+            
+            last_chunk = None 
             for chunk in completion:
                 last_chunk = chunk
                 if chunk.choices and len(chunk.choices) > 0:
                     delta = chunk.choices[0].delta
-                    # 思考内容
+                
                     if hasattr(delta, "reasoning_content") and delta.reasoning_content is not None:
                         return_template["thinking_content"] += delta.reasoning_content
-                    # 收到content，开始进行回复
+                   
                     if hasattr(delta, "content") and delta.content:
                         return_template["formal_answer"] += delta.content
             print(last_chunk)
