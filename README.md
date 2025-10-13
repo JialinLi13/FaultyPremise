@@ -39,19 +39,9 @@ With the advancement of code generation capabilities in large language models (L
 
 ## Data Construction
 
-We construct **PCBench** to systematically evaluate LLMs' premise critique abilities for erroneous inputs via a structured process:  
-1. **Error Categories**: Define 4 types of premise errors to assess model capabilities in identifying flawed inputs.  
-2. **Difficulty Levels**:  
-   - Normal: From GSM8K dataset  
-   - Medium: Adapted from Chinese College Entrance Examination (OlympiadBench)  
-   - Difficult: From Omni-MATH (difficulty >6)  
-3. **Problem Variants** for each base problem (error category + difficulty):  
-   - **Original Problem**: Correct premises (baseline).  
-   - **Flawed Problem**: Intentional errors in premises (to test autonomous critique).  
-   - **Flawed Problem with Explicit Instruction**: Adds prompts to check for errors (comparative reference).  
+We randomly collected 600 pieces of raw data from two datasets: HumanEval, MBPP+. Based on the following introduced three different types of erroneous premises defined by us, we reconstructed them into FPbench. Each one is designed to evaluate different aspects of the model’s ability to recognize and reason about flawed input. By constructing 600 base problems for each error type, we
+obtained a total of 1,800 unique base problems. This structure and scalable design enables rigorous evaluation of how self-scrutiny capabilities are influenced by error types and task complexity.
 
-**Scale**: 100 base problems per error-difficulty combination → 1,200 base problems → 3,600 problems (3 variants each).  
-Designed to analyze how error type and task complexity impact premise critique ability.
 <p align="center" width="90%">
 <a ><img src="resources/pipeline.png" alt="construction" style="width: 60%; min-width: 500px; display: block; margin: auto;"></a>
 </p>
@@ -81,17 +71,15 @@ python evaluation\evaluate.py --model_folder <model_responses> --model_name <mod
 
 ## Citation
 ```
-@misc{yang2025largemultimodalmodelsactively,
-      title={Can Large Multimodal Models Actively Recognize Faulty Inputs? A Systematic Evaluation Framework of Their Input Scrutiny Ability}, 
-      author={Haiqi Yang and Jinzhe Li and Gengxu Li and Yi Chang and Yuan Wu},
-      year={2025},
-      eprint={2508.04017},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2508.04017}, 
+@article{li2025refining,
+  title={Refining Critical Thinking in LLM Code Generation: A Faulty Premise-based Evaluation Framework},
+  author={Li, Jialin and Li, Jinzhe and Li, Gengxu and Chang, Yi and Wu, Yuan},
+  journal={arXiv preprint arXiv:2508.03622},
+  year={2025}
 }
 ```
 Please cite our paper if you find our research and code useful.
+
 
 
 
