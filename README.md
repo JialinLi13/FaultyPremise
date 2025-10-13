@@ -26,15 +26,15 @@
 - [Citation](#citation)
 
 ## Introduction
-With the advancement of code generation capabilities in large language models (LLMs), their reliance on input premises has intensified. When users provide inputs containing faulty premises, the probability of code generation hallucinations rises significantly, exposing deficiencies in their self-scrutiny capabilities. This paper proposes Faulty Premises Bench (FPBench), the first code generation evaluation framework targeting faulty premises. By systematically constructing three categories of faulty premises and integrating multidimensional evaluation metrics, it conducts in-depth assessments of 15 representative LLMs. T
+With the advancement of code generation capabilities in large language models (LLMs), their reliance on input premises has intensified. When users provide inputs containing faulty premises, the probability of code generation hallucinations rises significantly, exposing deficiencies in their self-scrutiny capabilities. This paper proposes Faulty Premises Bench (FPBench), the first code generation evaluation framework targeting faulty premises. By systematically constructing three categories of faulty premises and integrating multidimensional evaluation metrics, it conducts in-depth assessments of 15 representative LLMs. 
 
 
 
 ## Contribution
 
-- We are the first to propose a comprehensive benchmark specifically designed to assess the self-scrutiny capabilities of LLMs when confronted with faulty premises in code generation tasks.
-- We have developed innovative data construction methods, including those based on importance score analysis, random erasure, and the introduction of irrelevant information perturbations. These approaches enable us to systematically construct and expand a test set targeting faulty premises (comprising 1,800 problems in total) from existing code datasets.
-- We have designed a unique set of evaluation dimensions, including ”proactive error identification rate”, ”passive error identification rate”, and ”self-scrutiny overhead ratio”. These metrics aim to comprehensively quantify the model’s ability to identify, process, and respond to faulty premises, as well as its resource consumption.
+- We are the first to propose a comprehensive benchmark specifically designed to assess the self-scrutiny capabilities of LLMs when confronted with faulty premises in code generation tasks.
+- We have developed innovative data construction methods, including those based on importance score analysis, random erasure, and the introduction of irrelevant information perturbations. These approaches enable us to systematically construct and expand a test set targeting faulty premises (comprising 1,800 problems in total) from existing code datasets.
+- We have designed a unique set of evaluation dimensions, including ”proactive error identification rate”, ”passive error identification rate”, and ”self-scrutiny overhead ratio”. These metrics aim to comprehensively quantify the model’s ability to identify, process, and respond to faulty premises, as well as its resource consumption.
 
 
 ## Data Construction
@@ -92,5 +92,6 @@ python evaluation\evaluate.py --model_folder <model_responses> --model_name <mod
 }
 ```
 Please cite our paper if you find our research and code useful.
+
 
 
