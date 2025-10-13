@@ -26,7 +26,7 @@
 - [Citation](#citation)
 
 ## Introduction
-With the advancement of code generation capabilities in large language models (LLMs), their reliance on input premises has intensified. When users provide inputs containing faulty premises, the probability of code generation hallucinations rises significantly, exposing deficiencies in their self-scrutiny capabilities. This paper proposes Faulty Premises Bench (FPBench), the first code generation evaluation framework targeting faulty premises. By systematically constructing three categories of faulty premises and integrating multidimensional evaluation metrics, it conducts in-depth assessments of 15 representative LLMs. 
+With the advancement of code generation capabilities in large language models (LLMs), their reliance on input premises has intensified. When users provide inputs containing faulty premises, the probability of code generation hallucinations rises significantly, exposing deficiencies in their self-scrutiny capabilities. This paper proposes Faulty Premises Bench (FPBench), the first code generation evaluation framework targeting faulty premises. By systematically constructing three categories of faulty premises and integrating multidimensional evaluation metrics, it conducts in-depth assessments of 15 representative LLMs. 
 
 
 
@@ -79,6 +79,7 @@ python evaluation\evaluate.py --model_folder <model_responses> --model_name <mod
 }
 ```
 Please cite our paper if you find our research and code useful.
+
 
 
 
