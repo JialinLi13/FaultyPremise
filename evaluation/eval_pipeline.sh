@@ -1,15 +1,14 @@
 export HF_ENDPOINT=https://hf-mirror.com
-# 需要在主目录运行 bash -x eval_pipeline.sh
+#  bash -x eval_pipeline.sh
 
-# 普通模型
 
-# gpt-4o -----------------------------------------------(正常输出，非流式，完成推理)
+# gpt-4o -----------------------------------------------
 # infer-inference
 python inference.py --model_name qwen3-8b --mode inference --save_frequency 2 --dataset_load_proc 10 --infer_proc 5
-# infer-check 直到没有样本被遗漏
+# infer-check 
 
 python eval.py --model_name gpt-4 --mode inference --evaluator gpt-4.1 --save_frequency 2 --infer_proc 10
-# eval-check 直到没有样本被遗漏
+# eval-check 
 # statistics
 python statistics.py
 # ----------------------------------------------------------
