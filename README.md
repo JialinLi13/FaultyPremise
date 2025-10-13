@@ -1,7 +1,7 @@
 # FaultyPremise
 
 <div align="center">
-  <a href="https://arxiv.org/abs/2508.04017">
+  <a href="https://arxiv.org/abs/2508.03622">
     <strong>📃 Paper</strong>
   </a>
   •
@@ -9,7 +9,7 @@
     <strong>🤗 Dataset</strong>
   </a>
   •
-  <a href="https://github.com/MLGroupJLU/LMM_ISEval">
+  <a href="https://github.com/JialinLi13/FaultyPremise">
     <strong>🖥️ Code</strong>
   </a>
 </div>
@@ -92,4 +92,5 @@ python evaluation\evaluate.py --model_folder <model_responses> --model_name <mod
 }
 ```
 Please cite our paper if you find our research and code useful.
+
 
