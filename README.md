@@ -39,8 +39,8 @@ With the advancement of code generation capabilities in large language models (L
 
 ## Data Construction
 
-We randomly collected 600 pieces of raw data from two datasets: HumanEval, MBPP+. Based on the following introduced three different types of erroneous premises defined by us, we reconstructed them into FPbench. Each one is designed to evaluate different aspects of the model’s ability to recognize and reason about flawed input. By constructing 600 base problems for each error type, we
-obtained a total of 1,800 unique base problems. This structure and scalable design enables rigorous evaluation of how self-scrutiny capabilities are influenced by error types and task complexity.
+We randomly collected 600 pieces of raw data from two datasets: HumanEval, MBPP+. Based on the following introduced three different types of erroneous premises defined by us, we reconstructed them into FPbench. Each one is designed to evaluate different aspects of the model’s ability to recognize and reason about flawed input. By constructing 600 base problems for each error type, we
+obtained a total of 1,800 unique base problems. This structure and scalable design enables rigorous evaluation of how self-scrutiny capabilities are influenced by error types and task complexity.
 
 <p align="center" width="90%">
 <a ><img src="resources/pipeline.png" alt="construction" style="width: 60%; min-width: 500px; display: block; margin: auto;"></a>
@@ -79,6 +79,7 @@ python evaluation\evaluate.py --model_folder <model_responses> --model_name <mod
 }
 ```
 Please cite our paper if you find our research and code useful.
+
 
 
 
