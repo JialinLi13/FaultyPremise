@@ -43,13 +43,13 @@ We randomly collected 600 pieces of raw data from two datasets: HumanEval, MBPP+
 obtained a total of 1,800 unique base problems. This structure and scalable design enables rigorous evaluation of how self-scrutiny capabilities are influenced by error types and task complexity.
 
 <p align="center" width="90%">
-<a ><img src="Loader/figure 16.pdf" alt="construction" style="width: 60%; min-width: 500px; display: block; margin: auto;"></a>
+<a ><img src="Loader/figure 4.png" alt="construction" style="width: 60%; min-width: 500px; display: block; margin: auto;"></a>
 </p>
 
 ## Results
 
 <p align="center" width="80%">
-<a ><img src="Loader/Figure 15.pdf" alt="results" style="width: 60%; min-width: 550px; display: block; margin: auto;"></a>
+<a ><img src="Loader/Figure_1.png" alt="results" style="width: 60%; min-width: 550px; display: block; margin: auto;"></a>
 </p>
 
 
@@ -79,6 +79,7 @@ python evaluation\evaluate.py --model_folder <model_responses> --model_name <mod
 }
 ```
 Please cite our paper if you find our research and code useful.
+
 
 
 
